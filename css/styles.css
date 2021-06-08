@@ -65,16 +65,23 @@ body {
   padding-top: 10px;
   padding-bottom: 10px;
 }
-.mainNav {
+.siteNav {
   display: flex;
   align-items: center;
   justify-content: space-between;
 }
+.mainNav {
+  display: flex;
+}
 .nav {
   display: flex;
+  margin-left: 93px;
+  margin-right: 331px;
 }
 .navList {
   margin-right: 50px;
+  padding-top: 32px;
+  padding-bottom: 32px;
 }
 .nav .navList:last-child {
   margin-right: 0;
@@ -139,6 +146,8 @@ img {
   font-weight: 500;
   line-height: 1.142em;
   letter-spacing: 0.02em;
+  line-height: 16px;
+
   color: #757575;
 }
 .contaktsLinks:focus,
