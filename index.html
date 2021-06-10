@@ -6,12 +6,12 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Студия</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/1.0.0/modern-normalize.css" />
     <link rel="preconnect" href="http://fonts.gstatic.com" />
     <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@700&family=Roboto:wght@400;500;700;900&display=swap" rel="stylesheet"/>
     <link rel="stylesheet" href="./css/styles.css"
     />
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/1.0.0/modern-normalize.css"/>
-</head>
+   </head>
 
 <body>
     <header>
@@ -20,15 +20,15 @@
             <nav class="siteNav">
                 <a href=""<span class="logo">Web</span><span class="logoStudio">Studio</span></a>
 
-                <ul class="nav">
-                    <li class="navList">
-                        <a class="menu" href="./index.html">Студия</a>
+                <ul class="navList">
+                    <li class="navList-item">
+                        <a class="navList-link" href="./index.html">Студия</a>
                     </li>
-                    <li class="navList">
-                        <a class="menu" href="./portfolio.html">Портфолио</a>
-                    </li class="navList">
-                    <li class="navList">
-                        <a class="menu" href="Контакты">Контакты</a>
+                    <li class="navList-item">
+                        <a class="navList-link" href="./portfolio.html">Портфолио</a>
+                    </li>
+                    <li class="navList-item">
+                        <a class="navList-link" href="Контакты">Контакты</a>
                     </li>
                 </ul>
             </nav>
@@ -41,7 +41,7 @@
     </header>
 
     <main>
-    <section class="color">    
+    <section class="hero">    
         <div class="container">
             <!--Main content-->
             <h1 class="text">Эффективные решения для вашего бизнеса</h1>
@@ -95,29 +95,37 @@
 
         <!--Block with personnel-->
 
-        <section class="section">
+        <section class="section teamSection">
             <div class="container professional">
                 <h2 class="work_title">Наша команда</h2>
                 <ul class="teamlidcard">
                     <li class="teamlid">
-                        <img src="./im ages/img7.jpg" alt="img7" width="270"/>
-                        <h3 class="team">Игорь Демьяненко</h3>
-                        <p class="teamCard">Product Designer</p>
+                        <img src="./images/img7.jpg" alt="img7" width="270"/>
+                        <div class="divteamCard">
+                            <h3 class="team">Игорь Демьяненко</h3>
+                            <p class="teamCard">Product Designer</p>
+                        </div>
                     </li>
                     <li class="teamlid">
                         <img src="./images/img4.jpg" alt="img4" width="270"/>
-                        <h3 class="team">Ольга Репина</h3>
-                        <p class="teamCard">Frontend Developer</p>
+                        <div class="divteamCard">
+                            <h3 class="team">Ольга Репина</h3>
+                            <p class="teamCard">Frontend Developer</p>
+                        </div>
                     </li>
                     <li class="teamlid">
                         <img src="./images/img5.jpg" alt="img5" width="270"/>
-                        <h3 class="team">Николай Тарасов</h3>
-                        <p class="teamCard">Marketing</p>
+                        <div class="divteamCard">
+                            <h3 class="team">Николай Тарасов</h3>
+                            <p class="teamCard">Marketing</p>
+                        </div>
                     </li>
                     <li class="teamlid">
                         <img src="./images/img6.jpg" alt="img6" width="270" />
-                        <h3 class="team">Михаил Ермаков</h3>
-                        <p class="teamCard">UI Designer</p>
+                        <div class="divteamCard">
+                            <h3 class="team">Михаил Ермаков</h3>
+                            <p class="teamCard">UI Designer</p>
+                        </div>
                     </li>
                 </ul>
             </div>

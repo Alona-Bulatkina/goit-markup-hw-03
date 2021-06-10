@@ -17,35 +17,45 @@ body {
   margin: 0;
   padding: 0;
 }
+a {
+  text-decoration: none;
+}
+header {
+  height: 80px;
+  display: flex;
+}
 .container {
-  width: 1170px;
+  width: 1200px;
+  padding: 0, 15px;
   margin-left: auto;
   margin-right: auto;
-  list-style: none;
 }
 .section {
   padding-top: 94px;
   padding-bottom: 94px;
 }
-.color {
-  display: flex;
-  width: 1600px;
+.hero {
+  max-width: 1600px;
   height: 600px;
   background: #2f303a;
   padding-top: 200px;
+  padding-bottom: 200px;
   margin-left: auto;
-  justify-content: center;
+  margin: 0, auto;
+  text-align: center;
 }
 .button {
   display: flex;
   margin-bottom: 50px;
   justify-content: center;
 }
-.listMenu {
-  margin-right: 8px;
-}
 .button .buttonListMenu:last-child {
   margin-right: 0;
+}
+.buttonListMenu {
+  margin-right: 8px;
+  background: #f5f4fa;
+  border-radius: 4px;
 }
 .mainButton:hover,
 .mainButton:focus {
@@ -68,26 +78,24 @@ body {
 .siteNav {
   display: flex;
   align-items: center;
-  justify-content: space-between;
 }
 .mainNav {
   display: flex;
-}
-.nav {
-  display: flex;
-  margin-left: 93px;
-  margin-right: 331px;
+  justify-content: space-between;
 }
 .navList {
-  margin-right: 50px;
-  padding-top: 32px;
-  padding-bottom: 32px;
+  display: flex;
+  margin-left: 93px;
 }
-.nav .navList:last-child {
+.navList-item {
+  margin-right: 50px;
+}
+.navList .navList-item:last-child {
   margin-right: 0;
 }
 .mainList {
   display: flex;
+  align-items: center;
 }
 .mainList li {
   margin-right: 50px;
@@ -129,18 +137,15 @@ img {
   display: flex;
   justify-content: space-between;
 }
-.groupNam .menu {
+.navList-link {
   font-weight: 500;
   line-height: 1.142em;
   letter-spacing: 0.02em;
   color: #212121;
 }
-.menu:focus,
-.menu:hover {
+.navList-link:focus,
+.navList-link:hover {
   color: #2196f3;
-}
-.menu:visited {
-  color: blueviolet;
 }
 .contaktsLinks {
   font-weight: 500;
@@ -155,6 +160,8 @@ img {
   color: #2196f3;
 }
 .text {
+  margin-right: auto;
+  margin-left: auto;
   font-weight: 900;
   font-size: 44px;
   line-height: 1.363em;
@@ -171,7 +178,9 @@ img {
   text-transform: uppercase;
   color: #212121;
 }
-
+.teamSection {
+  background: #f5f4fa;
+}
 /* work_ title*/
 
 .work_title {
@@ -187,6 +196,11 @@ img {
     0px 2px 1px rgba(0, 0, 0, 0.2);
   border-radius: 0px 0px 4px 4px;
 }
+.divteamCard {
+  padding-top: 20px;
+  padding-bottom: 20px;
+  background: white;
+}
 .team {
   font-weight: 500;
   font-size: 16px;
@@ -194,7 +208,7 @@ img {
   text-align: center;
   letter-spacing: 0.03em;
   color: #212121;
-  margin: 10px;
+  margin-bottom: 10px;
 }
 .teamCard {
   font-size: 16px;
@@ -205,6 +219,12 @@ img {
 .teamlidcard {
   display: flex;
   justify-content: space-between;
+}
+.cardItem {
+  padding-top: 20px;
+  padding-bottom: 24px;
+  padding-left: 24px;
+  padding-right: 24px;
 }
 .group {
   font-weight: 700;
@@ -225,7 +245,6 @@ img {
   box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 1px 2px rgba(0, 0, 0, 0.08),
     0px 2px 2px rgba(0, 0, 0, 0.12);
   border-radius: 4px;
-  color: rgb(29, 25, 25);
 }
 .listMenu {
   font-weight: 500;
@@ -237,13 +256,13 @@ img {
   padding-bottom: 6px;
   padding-left: 22px;
   padding-right: 22px;
+  border: 1px solid #f5f4fa;
 }
 .colorOne {
-  width: 1600px;
-  height: 252px;
   background: #2f303a;
   padding-top: 60px;
   padding-bottom: 60px;
+  max-width: 1600px;
 }
 .logo {
   font-weight: bold;
